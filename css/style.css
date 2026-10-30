@@ -1,0 +1,72 @@
+
+/* Remove default browser spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E0E3E5;
+    padding: 10px 24px;
+    min-height: 48px;
+    box-sizing: border-box;
+}
+
+/* Logo size */
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+/* Navigation menu */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation text */
+.nav-links a {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hover color */
+.nav-links a:hover {
+    color: #B32626;
+}
+
+/* Phone numbers */
+.nav-contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.nav-contact a {
+    color: #111;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
